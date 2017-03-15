@@ -1,0 +1,29 @@
+.container {
+  background: #f6f6f6;
+  min-height: 100vh;
+}
+
+.title h2 {
+  display: inline-block;
+}
+
+i.fa.fa-search {
+  background: #ccc;
+  padding: 4px;
+  border-radius: 4px;
+  margin-left: 15px;
+}
+
+.content {
+  background: #e6e6e6;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+li {
+  list-style: none;
+}
+
+li p {
+  color: #666;
+}
