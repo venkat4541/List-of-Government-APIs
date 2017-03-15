@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="guvApi">
   <head>
     <meta charset="utf-8">
     <title>US Government APIs</title>
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container" ng-controller="listApi">
       <div class="title text-center">
         <h2>List of Government APIs</h2><i class="fa fa-search fa-2x" aria-hidden="true"></i>
       </div>
@@ -16,27 +16,27 @@
         <ul>
           <li>
             <div class="org">
-              <div class="col-xs-2">
-                Organization
+              <div class="col-xs-3 text-right">
+                Organization:
               </div>
-              <div class="col-xs-10">
-                White House
+              <div class="col-xs-9">
+                {{name}}
               </div>
             </div>
             <div class="api">
-              <div class="col-xs-2">
-                API
+              <div class="col-xs-3 text-right">
+                API:
               </div>
-              <div class="col-xs-10">
-                Policy Snapshots
+              <div class="col-xs-9">
+                {{org}}
               </div>
             </div>
             <div class="url">
-              <div class="col-xs-2">
-                URL
+              <div class="col-xs-3 text-right">
+                URL:
               </div>
-              <div class="col-xs-10">
-                http://www.whitehouse.gov/developers/policy-snapshots-json-feed
+              <div class="col-xs-9">
+                {{url}}
               </div>
             </div>
           </li>
