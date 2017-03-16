@@ -95,3 +95,26 @@ b.title {
 .url a:hover {
   border-bottom: 1px dashed #9E9E9E;
 }
+
+.credits {
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.9);
+  color: #bbb;
+  line-height: 35px;
+  font-size: 0.9em;
+  text-align: center;
+  font-family: "Segoe UI";
+}
+
+.credits a {
+  color: #f6f6f6;
+}
+
+.credits a:hover {
+  color: #FF5722;
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
