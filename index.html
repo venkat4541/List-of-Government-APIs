@@ -2,6 +2,7 @@
 <html ng-app="guvApi">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>US Government APIs</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -10,12 +11,12 @@
   <body>
     <div class="container" ng-controller="listApi">
       <div class="title text-center">
-        <h2>List of Government APIs</h2><i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        <h2>US Government APIs</h2><i class="fa fa-search fa-2x" aria-hidden="true"></i>
       </div>
       <div class="content">
         <div class="col-xs-12 select">
           <select value="Filter by organization" ng-options="temp.name for temp in info" ng-model="sel">
-            <option value=''>All</option>
+            <option value=''>Filter by Organization - Show all</option>
           </select>
         </div>
         <ul>
@@ -37,7 +38,7 @@
                   <b class="title">URL:</b>
                 </div>
                 <div class="col-xs-9">
-                  <i>{{api.url}}</i>
+                  <i><a href="{{api.url}}" target="_blank">{{api.url}}</a></i>
                 </div>
               </div>
             </li>

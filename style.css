@@ -1,5 +1,6 @@
 body {
   background: #f6f6f6;
+  word-break: break-word;
 }
 
 .container {
@@ -31,6 +32,7 @@ i.fa.fa-search {
 select {
   height: 30px;
   width: 100%;
+  overflow: hidden;
 }
 
 .org {
@@ -82,4 +84,13 @@ b.apiname {
 
 b.title {
   color: #777;
+}
+
+.url a {
+  text-decoration: none;
+  color: #111;
+}
+
+.url a:hover {
+  border-bottom: 1px dashed #9E9E9E;
 }
