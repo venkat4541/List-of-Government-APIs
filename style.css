@@ -1,5 +1,8 @@
-.container {
+body {
   background: #f6f6f6;
+}
+
+.container {
   min-height: 100vh;
 }
 
@@ -15,15 +18,68 @@ i.fa.fa-search {
 }
 
 .content {
-  background: #e6e6e6;
   padding: 10px;
   overflow-y: auto;
 }
 
+.select {
+  margin: 15px 0;
+  line-height: 30px;
+  padding: 0;
+}
+
+select {
+  height: 30px;
+  width: 100%;
+}
+
+.org {
+  display: inline-block;
+  margin-bottom: 20px;
+  border-bottom: 10px solid #dadada;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.orgname {
+  background: #dadada;
+  border: 2px solid #dadada;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
 li {
+  background: #fff;
+  line-height: 25px;
+  display: inline-block;
   list-style: none;
+  width: 100%;
+  padding: 10px 0;
 }
 
 li p {
   color: #666;
+}
+
+.even {
+  border-left: 2px solid #FF9800;
+  border-right: 2px solid #FF9800;
+}
+
+.odd {
+  border-left: 2px solid #4CAF50;
+  border-right: 2px solid #4CAF50;
+}
+
+b.apiname {
+  color: #444;
+}
+
+b.title {
+  color: #777;
 }
