@@ -8,19 +8,25 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body ng-cloak>
     <div class="container" ng-controller="listApi">
-      <div class="title text-center">
-        <h2>US Government APIs</h2><i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      <div class="title">
+        <div class="text-center">
+          <h2>US Government APIs</h2>
+        </div>
+        <!-- <div class="search">
+          <input type="text" placeholder="Fliter by Search" ng-model="searchText">
+        </div> -->
+        <!-- <i class="fa fa-search fa-2x" aria-hidden="true"></i> -->
       </div>
       <div class="content">
         <div class="col-xs-12 select">
-          <select value="Filter by organization" ng-options="temp.name for temp in info" ng-model="sel">
-            <option value=''>Filter by Organization - Show all</option>
+          <select value="Filter by organization" ng-options="temp.name for temp in info" ng-model="selected">
+            <option value="">Filter by Organization - Show all</option>
           </select>
         </div>
         <ul>
-          <div class="org" ng-repeat="name in info | filter:sel.name" >
+          <div class="org" ng-repeat="name in info | filter:selected.name" >
             <div class="orgname col-xs-12">
               <h3 class="text-center">{{name.name}}</h3>
             </div>
